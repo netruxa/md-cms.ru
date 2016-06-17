@@ -1,0 +1,62 @@
+@media (max-width: 1024px) {
+	.tabs_category_level1 ul li a span {font-size: 14px;}
+	.tabs_category_level1 ul li a img {max-height: 65px;}
+
+	.items_tovars .item {height: 200px;}
+	.items_tovars .item .name {font-size: 18px;}
+	.items_tovars .item .price {font-size: 20px;}
+	.items_tovars .item .img {width: 55%;}
+
+	.items_tovars_cart .item {font-size: 14px;}
+	.items_tovars_cart .item .buttons .button {font-size: 20px;width: 28px;}
+}
+@media (max-width: 768px) {
+	.tabs_category_level1 ul li a span {font-size: 12px;}
+	.tabs_category_level1 ul li a img {max-height: 50px;}
+
+	.items_tovars .item {height: 180px;}
+	.items_tovars .item .name {font-size: 16px;}
+	.items_tovars .item .price {font-size: 18px;}
+	.items_tovars .item .img {width: 50%;}
+
+	.items_tovars_cart .item {font-size: 12px;}
+	.items_tovars_cart .item .name {width: 60%;}
+	.items_tovars_cart .item .price {width: 30%;}
+	.items_tovars_cart .item .buttons .button {font-size: 16px;width: 24px;}
+
+	#cart .h3 {font-size: 16px;}
+}
+@media (max-width: 650px) {	.popup {top: 10%;width: 100%;left: 0;margin: 0;height: auto;font-size: 18px;padding: 30px 50px;}
+}
+@media (max-width: 500px) {
+	.items_tovars .item {width: 100%;margin:0;}
+	.data_level2 {width: 100%;}
+	#cart {width: 49%;position: fixed;top: 0;left: 0;bottom: initial;}
+	#cart .h1 {position: initial;height: 40px;padding: 10px 5% 5px;background: #ccc url("../images/menu_hamburger.png") no-repeat 90% 11px;}
+	#cart .h2 {padding: 0 5%;}
+	.items_tovars_cart .item .count {padding-left: 5%;}
+	.items_tovars_cart .item .price {padding-right: 5%;}
+	.items_tovars_cart .item .buttons {margin-right: 5%;}
+	#cart .h3 {font-size: 14px;height: 20px;padding: 0 5%;}
+	#cart .items_tovars_cart, #cart .h2 {display:none;}
+	#cart .submit_form {left: 5%;top: 75px;padding: 20px;width: 190%;}
+	#cart .submit_form:before {background-position:0 0;height: 20px;left: 10px;top: -20px;width: 80px;}
+
+	.adaptive_phone_menu {display: block;}
+
+	.tabs_category_level1 {margin-top: 60px;}
+
+	.tabs_category_level1 ul, .tabs_category_level2 ul {height: auto;}
+	.tabs_category_level1 ul li, .tabs_category_level2 ul li {margin: 0;float: none;}
+	.tabs_category_level1 ul li a, .tabs_category_level2 ul li a {border-radius:0}
+	.tabs_category_level1 ul li {width:100%;}
+	.tabs_category_level1 ul li a {height: 50px;}
+	.tabs_category_level1 ul li a span {font-size: 18px;top: 15px;}
+
+	#footer .footer_button {padding: 10px 10px 5px 10px;}
+
+	.popup {font-size: 14px;padding: 20px 20px;}
+}
+@media (max-width: 320px) {
+
+}
