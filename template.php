@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>md-cms DEMO</title>
-		<meta name="description" content="На этой демо-витрине можно ознакомиться с меню ресторана Макдоналдс. Цены актуальны на ноябрь 2015" />
-		<meta name="keywords" content="md-cms, макдоналдс, mcdonalds" />
-		<meta property="og:image" content="<?=SITE_PATH;?>assets/images/social.jpg"/>
+		<title><?=$seo['title'];?></title>
+		<? if ($seo['meta_description']) { ?><meta name="description" content="<?=$seo['meta_description'];?>" /><? } ?>
+		<? if ($seo['meta_keywords']) { ?><meta name="keywords" content="<?=$seo['meta_keywords'];?>" /><? } ?>
+		<? if ($seo['og_image']) { ?><meta property="og:image" content="<?=$seo['og_image'];?>" /><? } ?>
 
 		<link href="assets/css/normalize.css" rel="stylesheet">
 		<link href="assets/css/style.css" rel="stylesheet">
@@ -62,7 +62,6 @@
 
 	<div class="bg"></div>
 	<div class="popup">
-		<!-- demo -- Вставьте карту, следуйте инструкции на пин-паде<br />Insert card, follow instruction on PinPad screen-->
 	    <div class="zag">Подтверждение заказа</div>
 	    <form action="send.php">
 	    <input id="order_hidden" name="order" type="hidden" value="">
@@ -93,6 +92,6 @@
 		var thousands_sep = '<?=$number_format['thousands_sep'];?>';//разделитель тысяч
 	</script>
 	<script src="assets/js/functions.js"></script>
-    <!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33483513 = new Ya.Metrika({ id:33483513, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/33483513" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+    <? if ($id_metrika) { ?><!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter<?=$id_metrika;?> = new Ya.Metrika({ id:<?=$id_metrika;?>, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/<?=$id_metrika;?>" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter --><? } ?>
 	</body>
 </html>

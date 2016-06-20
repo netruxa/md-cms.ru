@@ -5,7 +5,7 @@ function show_menu($categorys,$url=false) {
 		if ($url) $link=$url.'_'.$category['ALIAS']; else $link=$category['ALIAS'];
 		$return.='<li class="category'.$category['ID'].'"><a href="#'.$link.'">';
 		if ($category['NAME']) $return.='<span>'.$category['NAME'].'</span>';
-		if ($category['IMG']) $return.='<img src="'.$category['IMG'].'">';
+		if ($category['IMG']) $return.='<img src="'.$category['IMG'].'" alt="'.$category['NAME'].'">';
 		$return.='</a></li>';
 	}
 	$return.='</ul>';
