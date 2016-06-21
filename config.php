@@ -35,7 +35,7 @@
 	$file_category = $_SERVER['DOCUMENT_ROOT'].SITE_PATH.'upload/data/category.mdcms';	//адрес файла с категориями
 	$file_items = $_SERVER['DOCUMENT_ROOT'].SITE_PATH.'upload/data/items.mdcms';      	//адрес файла с товарами
 	$path_orders = $_SERVER['DOCUMENT_ROOT'].SITE_PATH.'upload/data/orders/';     		//папка с заказами
-	$path_backups = $_SERVER['DOCUMENT_ROOT'].SITE_PATH.'upload/data/backups/';     	//папка с бэкапами файлов category.json и items.json
+	$path_backups = $_SERVER['DOCUMENT_ROOT'].SITE_PATH.'upload/data/';     			//папка с бэкапами файлов category и items
     $path_images = $_SERVER['DOCUMENT_ROOT'].SITE_PATH.IMAGES_PATH;
 
 	$sound_enable=true;										//озвучка движений
