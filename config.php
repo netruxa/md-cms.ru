@@ -42,6 +42,7 @@
 	$sound['click']=SITE_PATH.'upload/sounds/click.mp3';	//звук при клике на товар
 	$sound['go']=SITE_PATH.'upload/sounds/go.mp3';          //звук при улете товара в корзину
 
+	$version_mdcms='1.1';
 	$name_array_categorys=array(
 		0=>'ID',
 		1=>'NAME',

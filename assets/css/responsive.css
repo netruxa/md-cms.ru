@@ -14,7 +14,7 @@
 	.tabs_category_level1 ul li a span {font-size: 12px;}
 	.tabs_category_level1 ul li a img {max-height: 50px;}
 
-	.items_tovars .item {height: 180px;}
+	.items_tovars .item {width: 50%;height: 180px;}
 	.items_tovars .item .name {font-size: 16px;}
 	.items_tovars .item .price {font-size: 18px;}
 	.items_tovars .item .img {width: 50%;}
@@ -24,6 +24,8 @@
 	.items_tovars_cart .item .price {width: 30%;}
 	.items_tovars_cart .item .buttons .button {font-size: 16px;width: 24px;}
 
+	.data_level2 {width: 65%;}
+	#cart {width: 35%;}
 	#cart .h3 {font-size: 16px;}
 }
 @media (max-width: 650px) {	.popup {top: 10%;width: 100%;left: 0;margin: 0;height: auto;font-size: 18px;padding: 30px 50px;}

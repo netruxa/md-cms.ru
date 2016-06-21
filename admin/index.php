@@ -1,4 +1,6 @@
 <?
+	@session_start();
+
 	include '../config.php';
 
 	if (!is_writable($file_category)) echo '<div class="system_error">Файл с категориями '.$file_category.' недоступен на запись!</div>';
@@ -6,6 +8,7 @@
 	if (!is_writable($path_images)) echo '<div class="system_error">Папка с изображениями товаров '.$path_images.' недоступна на запись!</div>';
 	if (!is_writable($path_orders)) echo '<div class="system_error">Папка с заказами '.$path_orders.' недоступна на запись!</div>';
 	if ($save_backup && !is_writable($path_backups)) echo '<div class="system_error">Папка с бэкапами '.$path_backups.' недоступна на запись!</div>';
+	if (empty($_SESSION['check_version'])) {$check_version_mdcms=file_get_contents('http://md-cms.ru/check_version.php?now='.$version_mdcms.'&site='.$_SERVER['HTTP_HOST'].'&path='.$_SERVER['REQUEST_URI']);$_SESSION['check_version']=true;}
 
 	if (isset($_POST['edit_file']) && $_POST['edit_file']=='category') {
     	$content='';
